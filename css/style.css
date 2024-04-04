@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+  flex-direction: column;
+  background-image: url("../images/photo_2023-10-17_11-10-55.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(50px);
+  border-radius: 0 0 30px 30px;
+  max-width: 700px;
+  max-height: 400px;
+  text-align: center;
+  padding: 30px;
+  color: #052386;
+}
+.form {
+  display: block;
+  padding: 70px;
+  margin-bottom: -30px;
+  background-color: #0a34bd;
+  width: 700px;
+  text-align: center;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  border-radius: 30px 30px 0 0;
+}
+input {
+  border: none;
+  outline: none;
+  /* background: inherit; */
+  width: 400px;
+  height: 50px;
+  padding-left: 18px;
+  padding-right: 10px;
+  border-radius: 30px;
+  color: rgb(18, 45, 197);
+  font-size: 18px;
+}
+.btn {
+  height: 50px;
+  border-radius: 30px;
+  width: 100px;
+  border: none;
+  font-size: 20px;
+
+  color: rgb(18, 45, 197);
+  font-weight: 600;
+  background-color: cornflowerblue;
+  &:hover {
+    background-color: cyan;
+    color: burlywood;
+  }
+  transition: 1s;
+}
+img {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  display: flex;
+  object-fit: cover;
+  display: inline-block;
+}
+.content {
+  text-align: left;
+  opacity: 0.7;
+  width: 235px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
