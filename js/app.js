@@ -4,7 +4,13 @@ const input = document.querySelector("input");
 const template = document.querySelector("template");
 const div = document.querySelector(".card");
 
+let a;
+
 const form = document.querySelector(".form");
+
+// input.addEventListener("input", () => {
+//   console.log(input.value);
+// });
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -33,7 +39,8 @@ function updateUl(data) {
   const capital = clone.querySelector(".capital");
   const area = clone.querySelector(".area");
 
-  name.textContent = ` ${input.value.toUpperCase()}`;
+  name.textContent = ` ${data[0].name.common}`;
+  console.log(data[0].name.common);
   population.textContent = `Population : ${data[0].population} person`;
   tld.textContent = `Tld : ${data[0].tld}`;
   continents.textContent = `Continants : ${data[0].continents}`;
@@ -44,7 +51,6 @@ function updateUl(data) {
   image.src = data[0].flags.svg;
   image.alt = data[0].flags.alt;
   image.width = 250;
-  image.height = 150;
 
   div.appendChild(clone);
 
